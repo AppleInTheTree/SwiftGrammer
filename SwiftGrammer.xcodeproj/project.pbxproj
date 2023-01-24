@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		D0A2AD6E297FE6D800A2133C /* If-Switch-Practice.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = "If-Switch-Practice.playground"; path = "../If-Switch-Practice.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D00A1A39297FEA9D00D1E07C /* SwitchPractice.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwitchPractice.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		D0A2AD66297FE55B00A2133C = {
 			isa = PBXGroup;
 			children = (
-				D0A2AD6E297FE6D800A2133C /* If-Switch-Practice.playground */,
+				D00A1A39297FEA9D00D1E07C /* SwitchPractice.playground */,
 			);
 			sourceTree = "<group>";
 		};
