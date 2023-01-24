@@ -5,8 +5,10 @@ var greeting = "Hello, playground"
 var number : Int = Int.random(in: 0...10)
 
 switch number {
-    case let a where a <= 10:
-        print("Number is less than 10")
+    case 0...4 :
+        print("Rock")
+    case 5...8 :
+        print("Sissor")
     default:
-        break
+        print("Paper")
 }
