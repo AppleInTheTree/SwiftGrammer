@@ -6,10 +6,15 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXFileReference section */
+		D0A2AD6E297FE6D800A2133C /* If-Switch-Practice.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = "If-Switch-Practice.playground"; path = "../If-Switch-Practice.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		D0A2AD66297FE55B00A2133C = {
 			isa = PBXGroup;
 			children = (
+				D0A2AD6E297FE6D800A2133C /* If-Switch-Practice.playground */,
 			);
 			sourceTree = "<group>";
 		};
