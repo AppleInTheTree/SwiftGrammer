@@ -42,6 +42,7 @@ default:
     break
 }
 
+// Tuple Binding
 // you can bind a tuple in switch statement
 var coordinate = (Int.random(in: 1...3), Int.random(in: 0...4))
 
@@ -57,6 +58,10 @@ default:
 }
 
 
+/*: ## __Tuple can be used in function__
+    
+    Originally function has only one return value, means that it can not return mutiple values, but by using tuple function is able to return mutiply value in form of tuple
+ */
 
 
 
