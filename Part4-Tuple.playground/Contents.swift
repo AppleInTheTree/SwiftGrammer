@@ -23,7 +23,7 @@ let (name, age, location) = personSpec
 print(name, age, location)
 
 
-// Tuple can also use with If & Switch
+// Tuple usually used with If & Switch
 let iOS = (name: "Swift", version: "5")
 
 if iOS == ("Swift","5"){
