@@ -23,5 +23,6 @@ for first in 1...9 {
     for second in 1...9 {
         var result = first * second
         print("\(first) * \(second) = \(result)")
+        continue
     }
 }
