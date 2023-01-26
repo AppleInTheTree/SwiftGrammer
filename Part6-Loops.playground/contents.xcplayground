@@ -4,5 +4,6 @@
         <page name='ForLoop'/>
         <page name='WhileLoop'/>
         <page name='ControlTransferStatement'/>
+        <page name='LoopPractice'/>
     </pages>
 </playground>
