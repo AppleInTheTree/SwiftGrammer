@@ -21,8 +21,22 @@ for num in 1...20 {
 //printing multiplication tables
 for first in 1...9 {
     for second in 1...9 {
+        if second == 3 {
+            continue // If second is 3 and then it is passing loop 3 and goes to loop4
+        }
         var result = first * second
         print("\(first) * \(second) = \(result)")
-        continue
+        
+    }
+}
+
+for first in 1...9 {
+    for second in 1...9 {
+        if second == 3 {
+            break // If second is 3 and then it is breaking loop 3 and goes back to first loop
+        }
+        var result = first * second
+        print("\(first) * \(second) = \(result)")
+        
     }
 }
