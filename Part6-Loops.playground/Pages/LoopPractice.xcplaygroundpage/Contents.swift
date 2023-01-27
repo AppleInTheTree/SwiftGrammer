@@ -26,16 +26,15 @@ for i in 1...100 {
 }
 
 
-
 // print function -> print("", separator, terminator: "\n")
-print("hello", terminator: " ") // terminator is ends the function with what is after terminator:
+print("hello", terminator: "\n") // terminator is ends the function with what is after terminator:
 
 
 // Print the pyramid shape of emogi
-for i in 1...5 { // 1 2
-    for a in 1...5 { // 1 2 1
+FIRST: for i in 1...5 { // 1 2
+SECOND: for a in 1...5 { // 1 2 1
         if a > i { // 1 > 1 2 > 1
-            continue
+            continue SECOND // Like FIRST, SECOND use can declare lables and able to select the lable you want to go back wih
         }
         print("🙂", terminator:"") //🙂
     }
@@ -50,3 +49,5 @@ for i in 1...5 {
     }
     print()
 }
+
+
