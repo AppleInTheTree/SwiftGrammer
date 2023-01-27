@@ -16,15 +16,37 @@ for i in 1...100 {
         print("\(i) is multiplication of three")
     }
 }
+// It can be solved like this too
+
+for i in 1...100 {
+    if i % 3 != 0 {
+        continue
+    }
+    print("\(i) is multiplication of three")
+}
+
+
+
+// print function -> print("", separator, terminator: "\n")
+print("hello", terminator: " ") // terminator is ends the function with what is after terminator:
 
 
 // Print the pyramid shape of emogi
 for i in 1...5 { // 1 2
-    for a in (1...5) { // 1 2 1
+    for a in 1...5 { // 1 2 1
         if a > i { // 1 > 1 2 > 1
             continue
         }
         print("🙂", terminator:"") //🙂
     }
     print() // 1
+}
+// It can be solved like this too
+for i in 1...5 {
+    for j in 1...5 {
+        if i >= j {
+            print("🙂", terminator:"")
+        }
+    }
+    print()
 }
