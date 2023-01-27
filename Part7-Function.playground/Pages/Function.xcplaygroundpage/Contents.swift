@@ -10,7 +10,7 @@ print(saySomething(name: "Danial")) // call function with argument(same type wit
 
 
 
-// funtion with vaiadic parameter -> only can have one variadic parameter
+// funtion with variadic parameter -> only can have one variadic parameter
 func variadicParameter(variadic: Int..., single: Int) -> Int {
     var sum: Int = 0
     for a in variadic {
@@ -63,4 +63,56 @@ print(movingStep)
 
 
 // How to pointing and named a function
+
+// funtion that don't have parameter
+
+func noParameter(){
+    print("Hello")
+}
+
+noParameter
+
+// function that has one parameter
+
+func oneParameter(n: Int) {
+    print("\(n)")
+}
+
+oneParameter(n:)
+
+// function with more than two parameter
+
+func twoParameter(a: Int, b: String){
+    print("\(a) and \(b)")
+}
+
+twoParameter(a:b:)
+
+// Can bind function in variable by using pointing function name
+var two = twoParameter(a:b:)
+
+two(10,"Hi")
+
+
+// function with labled argument
+
+func labledParameter(_ a: Int, _ b: Int) {
+    print("\(a) and \(b)")
+}
+
+labledParameter(_:_:)
+
+// Function overloading
+
+// You can declare multiple function that has same name but different parameter -> overloading
+
+func printSomething(value: Int) {
+    print(value)
+}
+func printSomething(value: String) {
+    print(value)
+}
+func printSomething(value: Int...) {
+    print(value)
+}
 
