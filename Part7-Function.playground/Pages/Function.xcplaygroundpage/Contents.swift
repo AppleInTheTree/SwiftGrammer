@@ -116,3 +116,6 @@ func printSomething(value: Int...) {
     print(value)
 }
 
+func printSomething() {
+    print("Hello")
+}
