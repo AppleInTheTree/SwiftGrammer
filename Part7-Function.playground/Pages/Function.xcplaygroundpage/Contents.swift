@@ -119,3 +119,7 @@ func printSomething(value: Int...) {
 func printSomething() {
     print("Hello")
 }
+
+var fun = printSomething()
+
+var fun2 = printSomething(value: 2)
