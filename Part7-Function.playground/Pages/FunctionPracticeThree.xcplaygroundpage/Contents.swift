@@ -22,7 +22,7 @@ func recursiveFunction(num: Int) -> Int { 5
     return num * recursiveFunction(num: num - 1)
 }
 
-print(recursiveFunction(num: 5))
+print(recursiveFunction(num: 3))
 
 
 
