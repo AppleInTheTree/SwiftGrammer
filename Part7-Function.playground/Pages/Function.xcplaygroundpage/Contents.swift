@@ -22,7 +22,12 @@ var sum2 = variadicParameter(variadic: 12, 23, 12 , single: 2)
 print(sum2)
 
 
+// funtion that has initial value in parameter
+func intialValue(initial: Int = 5) {
+    print(initial)
+}
 
+//intialValue()
 
 // function with argument labled
 func sumation(first a: Int, second b: Int) -> Int {
@@ -120,6 +125,6 @@ func printSomething() {
     print("Hello")
 }
 
-var fun = printSomething()
-
-var fun2 = printSomething(value: 2)
+//var fun = printSomething()
+//
+//var fun2 = printSomething(value: 2)
