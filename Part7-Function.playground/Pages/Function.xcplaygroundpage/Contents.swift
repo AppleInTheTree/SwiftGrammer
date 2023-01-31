@@ -125,6 +125,32 @@ func printSomething() {
     print("Hello")
 }
 
-//var fun = printSomething()
-//
-//var fun2 = printSomething(value: 2)
+
+// about inout parameter
+// when we deliver argument value to parameter, parameter binding them into let type therefore we can not change the value of the argument inside of the function
+// when you want to change global variable that deliver to function by parameter -> we use inout
+
+var temp = 456;
+var num = 123;
+// by using inout keyword you can change their value
+func inoutFunction(a: inout Int, b: inout Int) {
+    var temp2 = a
+    a = b
+    b = temp2
+}
+// when you are delivering the address of variable, always put &
+// it cannot have deliver let type, literal, variadic Parameter, and initail value in parameter
+inoutFunction(a: &temp, b: &num)
+
+// value has been change
+print(temp)
+print(num)
+
+
+// when you use @discardableResult -> It will not display the warning that return value is unused
+@discardableResult
+func makeSomething(a: Int) -> Int {
+    return a*5
+}
+// in xcode if we do not put @discardarbleResult it will display warning that return value is unused
+makeSomething(a: 5)

@@ -12,7 +12,8 @@ func factorial(num: Int) -> Int {
 
 print(factorial(num: 4))
 
-// factorial using a recursive function
+// factorial using a recursive function -> aware of stackoverflow
+// must make statement that quit the recursion
 
 func recursiveFunction(num: Int) -> Int { 5
     if num <= 1 {
