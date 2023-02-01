@@ -10,3 +10,13 @@ func randomCharacter(inputS: String) -> String {
 }
 
 randomCharacter(inputS: "Hi many")
+
+
+
+
+func randomBox(input: String) -> String {
+    return String(input.randomElement()!)
+}
+
+randomBox(input: "nello")
+
