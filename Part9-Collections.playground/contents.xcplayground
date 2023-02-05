@@ -3,5 +3,6 @@
     <pages>
         <page name='Array'/>
         <page name='Untitled Page'/>
+        <page name='Sets'/>
     </pages>
 </playground>

@@ -1,7 +1,28 @@
 import UIKit
+// Array declaration (3 way)
+let numsArray: Array<Int> = [1,2,3,4,5]
+let numArray: [Int] = [1,2,3,4,5]
+let nuArray = [1,2,3,4,5]
+
+// let nuArray = [] -> error bc it can not guess the type (You should put at least one element)
+
+
 
 var shoppingList = ["Milk", "Egg", "Rice", "Juice", "Potato", "Cheese", "Butter"]
 print(shoppingList.count)
+
+shoppingList[0] // subscript grammer
+
+shoppingList.contains("Milk")
+shoppingList.randomElement()
+//shoppingList.swapAt(0, 1)
+print(shoppingList)
+
+// It returns optional value bc array can be empty
+if let shopList = shoppingList.first {
+    print(shopList)
+}
+
 
 shoppingList[4...6] = ["Bananas", "Apple"]
 print(shoppingList.count)

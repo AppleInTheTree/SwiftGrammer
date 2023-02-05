@@ -28,3 +28,6 @@ func saySomthing(word: String, num: Int? = nil){
 }
 
 saySomthing(word: "hello", num: 5)
+
+
+
