@@ -50,3 +50,28 @@ func evaluate(_ expression: ArithmeticExpression) -> Int {
 
 print(evaluate(product))
 
+
+enum Weekday {
+    case monday(String, Int), thusday, wednesday, thursday, friday, saturady, sunday
+}
+
+let data = Weekday.monday("second week", 4)
+
+
+switch data {
+case .monday(let a, let b):
+    print("\(a) and \(b)")
+default:
+    print("not a monday")
+}
+
+
+//switch data {
+//case .monday(let a, let b):
+//    print("today is \(Weekday.monday(a, b))")
+//@unknown default:
+//    print("It is not a Monday")
+//}
+
+
+
