@@ -1,5 +1,10 @@
 import UIKit
 
+// 클래스나 구조체는 틀, 객체는 실제 데이터
+
+
+
+
 // struct랑 class도 type를 만드는 것이기 때문에 대문자로 쓴다
 
 struct SomeStructure {
@@ -25,6 +30,8 @@ class VideoMode {
 }
 
 // 왜 class는 let type으로 선언해도 값 변경이 가능한데 struct는 불가능한가요?
+//  -> 메모리 구조떄문이다 struct로 생성을 하면 스택에 객체를 만드는것이기 때문에 인스턴스 전체가 let 타입으로 선언이 되서 변경이 안되는 반면에 class 객체는 heap에 저장이 되고 그 메모리 주소가 let으로 되는 것이기 때문에 가능하다
+
 // structs는 value type이다 인스턴스를 만들때 값을 설정할수 있다 (memberwise initializers)
 let someResolution = Resolution(width: 12, height: 12, name: "hi")
 print("The width of someResolution is \(someResolution.name ?? "bye")")
@@ -33,6 +40,7 @@ print("The width of someResolution is \(someResolution.name ?? "bye")")
 //someResolution.width = 10
 
 // classs는 인스턴스 선언할때 값 설정 불가 아래처럼 접근해서 해줘야 함 (!memberwise initializers)
+// 아니면 init을 사용해서 초기값을 설정할수 있게 해줘야 한다
 let someVideoMode = VideoMode()
 // Can drill down into subproperties
 someVideoMode.resolution.width = 1
