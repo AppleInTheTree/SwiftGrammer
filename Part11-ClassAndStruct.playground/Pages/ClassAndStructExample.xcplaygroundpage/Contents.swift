@@ -14,10 +14,13 @@ class Book {
         
         self.name = name
         self.price = price
-        self.company =  company
+        self.company = company
+        self.author = author
+        self.pages = pages
         
     }
-    
 }
+
+var swiftBook = Book(name: "Swift", price: 100, company: "Apple", author: "Steve", pages: 250)
 
 
